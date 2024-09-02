@@ -1,0 +1,184 @@
+.container > header,
+.container >header > nav{
+    width: 100%;
+    height: 210px;
+    z-index: 100;
+ 
+}
+.container >header > nav{
+    position: fixed;
+    
+}
+ 
+.container > header > nav > .top-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--nav-footer-color);
+    padding: 30px 180px;
+    position: relative;
+    box-shadow: 0px 3px 5px black;
+}
+.container > header > nav > .top-nav > .logo {
+    width: 250px;
+    padding-bottom: 5px;
+}
+.container > header > nav > .top-nav > .logo > #lo {
+    width: 100%;
+    transition: 0.4s ease-in-out;
+}
+.container > header > nav > .top-nav > .menu-top {
+    display: flex;
+    list-style: none;
+    font-family: var(--font-montserrat);
+}
+.container > header > nav > .top-nav > .menu-top > li:nth-child(4){
+    color: var(--hover-color);
+    position: relative;
+}
+.container > header > nav > .top-nav > .menu-top > li {
+    color: white;
+    position: relative;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+     padding: 15px 8px 15px 10px;
+     letter-spacing: 1px;
+}
+.container > header > nav > .top-nav > .menu-top > li > img{
+    border: 1px solid white;
+    border-radius: 2px;
+    padding: 1px;
+}
+.container > header > nav > .top-nav > .menu-top > li > span{
+    font-size: 14px;
+    vertical-align: middle;
+}
+.container > header > nav > .top-nav > .menu-top > li:hover > #down,
+.container > header > nav > .menu > .menu-bot > li:hover > #down{
+  transform: rotate(180deg) translateY(1px);
+}
+.container > header > nav > .top-nav > .menu-top > li > .dropdown,
+.container > header > nav > .top-nav > .menu-top >  li:nth-child(4) > .dropdown{
+    width: 242px;
+    height: 0px;
+    position: absolute;
+    background-color: var(--banner-color);
+    right: 0;
+    top: 45px;
+    list-style: none;
+    text-align: end;
+    overflow: hidden;
+    transition: 0.2s ease-in-out;
+}
+.container > header > nav > .top-nav > .menu-top > li > .dropdown > li{
+    padding: 10px 10px;
+    font-family: var(--font-montserrat);
+}
+.container > header > nav > .top-nav > .menu-top > li > .dropdown > li:first-child{
+    border-top: 1px solid gray;
+}
+.container > header > nav > .top-nav > .menu-top > li > .dropdown > li > a,
+.container > header > nav > .top-nav > .menu-top >  li:nth-child(4) > .dropdown > li{
+    color: white;
+    text-decoration: none;
+}
+/* menu design style */
+.container > header > nav > .menu {
+    width: 100%;
+    display: flex;
+    padding: var(--padd);
+    background-color: var(--menu-color);
+    justify-content: space-between;
+    height: 62px;
+}
+.container > header > nav > .menu > .menu-bot{
+    display: flex;
+    list-style: none;
+    color: white;
+    font-family: var(--font-montserrat);
+}
+.container > header > nav > .menu > .menu-bot > li {
+    padding: 23px 15px 20px 15px;
+    position: relative;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+     /* padding: 15px 8px 15px 10px; */
+     letter-spacing: 1px;
+     transition: 0.4s ease-in-out;
+}
+.container > header > nav > .menu > .menu-bot > li:first-child{
+    padding-left: 0;
+}
+/* ---------------dropdown-menu-nav style----------------------- */
+.container > header > nav > .menu > .menu-bot > li > .dropdown{
+    position: absolute;
+    list-style: none;
+    top: 67px;
+    left: 0;
+    width: 270px;
+    height: 0px;
+    font-family: var(--font-montserrat);
+    overflow: hidden;
+    background-color: var(--menu-color);
+    transition: 0.2s ease-in-out;
+}
+.container > header > nav > .menu > .menu-bot > li > .dropdown > li:first-child{
+    border-top: 1px solid goldenrod;
+    padding-top: 18px;
+}
+.container > header > nav > .menu > .menu-bot > li > .dropdown > li{
+    padding: 8px 10px;
+}
+.container > header > nav > .menu > .menu-bot > li > .dropdown > li > a{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 300;
+}
+/* -----------------Exchange-menu style---------------- */
+.container > header > nav > .menu > .exchange{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 11px;
+    font-family: var(--font-montserrat);
+    list-style: none;
+    cursor: pointer;
+}
+.container > header > nav > .menu > .exchange > li{
+    padding: 23px 15px 20px 15px;
+}
+/* hover li background */
+.container > header > nav > .top-nav > .menu-top > li:hover {
+    background-color: var(--banner-color);
+}
+.container > header > nav > .top-nav > .menu-top > li:hover > .dropdown,
+.container > header > nav > .menu > .menu-bot > li:hover > .dropdown{
+   height: 250px;
+}
+.container > header > nav > .menu > .menu-bot > li:first-child:hover > .dropdown{
+    height: 290px;
+}
+.container > header > nav > .top-nav > .menu-top >  li:nth-child(4):hover > .dropdown {
+    height: 90px;
+}
+.container > header > nav > .menu > .menu-bot > li:nth-child(4):hover > .dropdown{
+    height: 470px;
+}
+.container > header > nav > .top-nav > .menu-top > li > .dropdown > li:hover > a,
+.container > header > nav > .top-nav > .menu-top > li:nth-child(4) > .dropdown > li:hover,
+.container > header > nav > .menu > .menu-bot > li > .dropdown > li:hover > a
+{
+    text-decoration: underline;
+    color: var(--hover-color);
+}
+.container > header > nav > .menu > .menu-bot > li:hover{
+    color: var(--hover-color);
+}

@@ -1,0 +1,59 @@
+.container > main > .banner{
+    width: 100%;
+    background-color: var(--banner-color);
+    padding: var(--padd);
+    box-shadow: 0 5px 10px black;
+    position: relative;
+}
+.container > main > .banner > .image{
+    width: 100%;
+    height: 470px;
+    animation: ImageRender 10s linear infinite;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes ImageRender {
+    0% {
+        background-image: url(/assets/img/banner-1.jpg);
+        background-size: cover;
+    }
+    40% {
+        background-image: url(/assets/img/banner-2.jpg);
+        background-size: cover;
+    }
+    70% {
+        background-image: url(/assets/img/banner-3.jpg);
+        background-size: cover;
+    }
+    100% {
+        background-image: url(/assets/img/banner-1.jpg);
+        background-size: cover;
+    }
+}
+.container > main > .icon-banner {
+    width: 100%;
+    background-color: var(--banner-color);
+    padding: 80px  180px;
+}
+.container > main > .icon-banner > ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+.container > main > .icon-banner > ul > li {
+    text-align: center;
+    margin: 0 30px;
+}
+.container > main > .icon-banner > ul > li > a > img{
+    padding-bottom: 20px;
+}
+.container > main > .icon-banner > ul > li > a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: var(--font-montserrat);
+    font-size: 13px;
+}
+.container > main > .icon-banner > ul > li > a:hover{
+    text-decoration: underline;
+}
